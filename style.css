@@ -1,0 +1,64 @@
+/*
+Hijau : #005555
+Hijau Muda : #e5eeee
+Kuning tua : #f7b300
+Kuning muda : #fdf0cc
+*/
+
+html, body {
+    background-color: white;
+    max-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+footer {
+    font-size: small;
+    color: #9d9ea1;
+    padding: 0;
+    margin: 0;
+}
+
+.left-page, .right-page {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 8%;
+}
+
+.container-box {
+    text-align: center;
+    color: black;
+}
+
+label {
+    font-weight: bold;
+    font-size: small;
+}
+
+.container-password {
+    position: relative;
+}
+
+.toggle-eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #005555;
+}
+
+.lupa-password {
+    color: #005555;
+    font-size: small;
+}
+.left-page {
+    background-color: #005555;
+}
+
+.right-page {
+    background-color: white;
+}
