@@ -10,32 +10,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container text-center p-0 m-0" style="max-width: 100%;">
-    <div class="row justify-content-md-center max-vh-100 m-0 align-items-stretch">
-      <div class="col-lg-6 left-page d-flex flex-column">
-        <div class="flex-grow-1">
+  <div class="container text-center p-0 m-0" style="max-width: 100%; height: 100vh;">
+    <div class="row justify-content-md-center m-0 align-items-stretch" style="max-width: 100%; height: 100vh;">
+      <div class="col-lg-6 left-page flex-column">
+        
           <div class="container-box">
             <img src="Logo Putih.png" alt="Logo Putih" class="img-fluid" width="30%">
             <img src="4 kotak.png" alt="Gambar 4 kotak" class="pt-4 img-fluid" width="80%">
             <img src="ilustrasi laptop.png" alt="Gambar Laptop" class="pt-3 img-fluid" width="100%">
           </div>
-        </div>
+        
       </div>
-      <div class="col-lg-6 p-0 m-0 d-flex flex-column">
-        <div class="flex-grow-1">
+      <div class="col-lg-6 p-0">
           <div class="right-page">
-            <div class="container-box w-75 rounded shadow px-4 py-5">
+            <img src="Logo Hijau.png" alt="Logo Putih" class="img-fluid pb-2 logo2" width="45%">
+            <div class="container-box rounded-4 px-4 py-5">
               <h1><strong>Login</strong></h1>
-              <p>Selamat datang kembali</p>
+              <p class="mb-2">Selamat datang kembali</p>
               <form class="text-start" action="">
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control form-control" id="email" name="email" placeholder="Masukkan email">
+                  <label for="email" class="form-label-sm">Email</label>
+                  <input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="Masukkan email">
                 </div>
-                <div class="mb-3">
-                  <label for="password" class="form-label">Kata Sandi</label>
+                <div class="mb-2">
+                  <label for="password" class="form-label-sm">Kata Sandi</label>
                   <div class="container-password">
-                    <input type="password" class="form-control form-control" id="password" name="password" placeholder="Masukkan Kata Sandi">
+                    <input type="password" class="form-control form-control-sm" id="password" name="password" placeholder="Masukkan Kata Sandi">
                     <span class="toggle-eye" id="toggle-eye">
                       <i class="fa fa-eye" aria-hidden="true"></i>
                     </span>
@@ -43,24 +43,22 @@
                 </div>
                 <div class="row lupa-password">
                   <div class="col col-sm-7">
-                    Belum Punya Akun? <strong>Register</strong>
+                    <p>Belum Punya Akun? <strong>Register</strong></p>
                   </div>
                   <div class="col col-sm-5 text-end">
-                    <strong>Lupa Password?</strong>
+                    <p><strong>Lupa Password?</strong></p>
                   </div>
                 </div>
-                <button type="submit" class="form-control my-4 shadow-sm" style="background-color: #005555; color: white; font-size: smaller;">Login</button>
-                <p class="text-center text-body-secondary" style="font-size: small;">atau</p>
-                <button type="submit" class="form-control mt-4 shadow-sm" style="font-size: smaller;"><i class="fa fa-google"></i> Login dengan Google</button>
+                <button type="submit" class="form-control my-2 shadow-sm" style="background-color: #005555; color: white; font-size: smaller;">Login</button>
+                <p class="text-center text-body-secondary my-2" style="font-size: small;">atau</p>
+                <button type="submit" class="form-control mt-2 shadow-sm" style="font-size: smaller;"><i class="fa fa-google"></i> Login dengan Google</button>
               </form>
             </div>
+            <footer>
+              <hr>
+              <p>&copy; 2023 PT. Median. All Rights Reserved</p>
+            </footer>
           </div>
-        </div>
-        
-        <footer>
-          <hr>
-          <p>&copy; 2023 PT. Median. All Rights Reserved</p>
-        </footer>
       </div>
     </div>
   </div>

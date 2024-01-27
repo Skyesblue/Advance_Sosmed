@@ -3,11 +3,12 @@ Hijau : #005555
 Hijau Muda : #e5eeee
 Kuning tua : #f7b300
 Kuning muda : #fdf0cc
+Abu : #f1f3f9
 */
 
 html, body {
     background-color: white;
-    max-height: 100%;
+    height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -15,22 +16,37 @@ html, body {
 }
 
 footer {
-    font-size: small;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     color: #9d9ea1;
     padding: 0;
     margin: 0;
+    font-size: small;
 }
 
 .left-page, .right-page {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 8%;
+    align-items: center;
+    font-size: small;
+    height: 100vh;
 }
 
-.container-box {
-    text-align: center;
+.right-page .container-box {
+    width: 60%;
+    height: fit-content;
+    padding-left: 15%;
+    padding-right: 15%;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-page .container-box {
     color: black;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 label {
@@ -57,8 +73,61 @@ label {
 }
 .left-page {
     background-color: #005555;
+    padding: 5%;
 }
 
 .right-page {
+    position: relative;
     background-color: white;
+    flex-direction: column;
 }
+
+
+.logo2 {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        height: 100vh;
+    }
+
+    .left-page {
+        display: none;
+    }
+
+    .logo2 {
+        display: block;
+    }
+
+    .right-page {
+        background-color: #f1f3f9;
+        padding: 5%;
+        height: 100%;
+        justify-content: start;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-page .container-box {
+        box-shadow: none;
+        width: 100%;
+        font-size: small;
+        background-color: white;
+    }
+
+    footer {
+        background-color: #f1f3f9;
+        font-size:x-small;
+    }
+
+    footer hr {
+        margin: 5px;
+    }
+
+    footer p {
+        margin: 5px;
+    }
+}
+
