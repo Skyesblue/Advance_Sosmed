@@ -1,0 +1,68 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+}
+
+.group {
+    display: flex;
+    align-content: stretch;
+}
+
+.group input {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: none;
+    border-radius: 50px 0 0 50px;
+}
+
+.group button {
+    background: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+}
+
+.group > input {
+    flex: 1 0 auto;
+}
+
+.tombol {
+    background-color: #005555;
+    color: white;
+    font-size: small; 
+    font-weight: bold;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    border-radius: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.username {
+    margin: 0;
+}
+
+@media only screen and (max-width: 940px) {
+    header {
+        border-bottom: 1px solid #ccc;
+    }
+    .group, .tombol, .username, .fa-star {
+        display: none;
+    }
+}
