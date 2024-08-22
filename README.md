@@ -1,3 +1,3 @@
-Open itu on the link below 
+Open it on the link below 
 
 https://skyesblue.github.io/Advance_Sosmed/
